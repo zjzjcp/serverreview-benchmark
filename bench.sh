@@ -301,13 +301,24 @@ northamerciaspeedtest () {
 	speed "Softlayer, Washington, USA :" "http://speedtest.wdc04.softlayer.com/downloads/test100.zip"
 	speed "SoftLayer, San Jose, USA   :" "http://speedtest.sjc01.softlayer.com/downloads/test100.zip"
 	speed "SoftLayer, Dallas, USA     :" "http://speedtest.dal01.softlayer.com/downloads/test100.zip"
-	speed "Vultr, New Jersey, USA     :" "http://nj-us-ping.vultr.com/vultr.com.100MB.bin"
-	speed "Vultr, Seattle, USA        :" "http://wa-us-ping.vultr.com/vultr.com.100MB.bin"
-	speed "Vultr, Dallas, USA         :" "http://tx-us-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, New Jersey, USA     :" "https://nj-us-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Chicago, USA        :" "https://il-us-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Atlanta, USA        :" "https://ga-us-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Miami, USA          :" "https://fl-us-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Dallas, USA         :" "https://tx-us-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Seattle, USA        :" "https://wa-us-ping.vultr.com/vultr.com.100MB.bin"
 	speed "Vultr, Los Angeles, USA    :" "https://lax-ca-us-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Silicon Valley, USA :" "https://sjo-ca-us-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, New York, USA       :" "https://nj-us-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Linode, fremont, USA       :" "http://speedtest.fremont.linode.com/100MB-fremont.bin"
+	speed "Linode, atlanta, USA       :" "http://speedtest.atlanta.linode.com/100MB-atlanta.bin"
+	speed "Linode, dallas, USA        :" "http://speedtest.dallas.linode.com/100MB-dallas.bin"
+	speed "Linode, newark, USA        :" "http://speedtest.newark.linode.com/100MB-newark.bin"
+	speed "Linode, toronto, Canada    :" "http://speedtest.toronto1.linode.com/100MB-toronto1.bin"
 	speed "Ramnode, New York, USA     :" "http://lg.nyc.ramnode.com/static/100MB.test"
 	speed "Ramnode, Atlanta, USA      :" "http://lg.atl.ramnode.com/static/100MB.test"
 	speed "OVH, Beauharnois, Canada   :" "http://bhs.proof.ovh.net/files/100Mio.dat"
+	speed "Vultr, Toronto, Canada     :" "https://tor-ca-ping.vultr.com/vultr.com.100MB.bin"
 	echo ""
 }
 
@@ -316,11 +327,17 @@ europespeedtest () {
 	echo "" | tee -a $log
 	echostyle "## Europe Speedtest"
 	echo "" | tee -a $log
-	speed "Vultr, London, UK            :" "http://lon-gb-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, London, UK            :" "https://lon-gb-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Frankfurt, DE         :" "https://fra-de-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Paris, France         :" "https://par-fr-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Amsterdam, NL         :" "https://ams-nl-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, London, UK            :" "https://lon-gb-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Linode, london, UK           :" "http://speedtest.london.linode.com/100MB-london.bin"
+	speed "Linode, frankfurt, DE        :" "http://speedtest.frankfurt.linode.com/100MB-frankfurt.bin"
+	speed "Linode, frankfurt, DE        :" "http://speedtest.frankfurt.linode.com/100MB-frankfurt.bin"
 	speed "LeaseWeb, Frankfurt, Germany :" "http://mirror.de.leaseweb.net/speedtest/100mb.bin"
 	speed "Hetzner, Germany             :" "https://speed.hetzner.de/100MB.bin"
 	speed "Ramnode, Alblasserdam, NL    :" "http://lg.nl.ramnode.com/static/100MB.test"
-	speed "Vultr, Amsterdam, NL         :" "http://ams-nl-ping.vultr.com/vultr.com.100MB.bin"
 	speed "EDIS, Stockholm, Sweden      :" "http://se.edis.at/100MB.test"
 	speed "OVH, Roubaix, France         :" "http://rbx.proof.ovh.net/files/100Mio.dat"
 	speed "Online, France               :" "http://ping.online.net/100Mo.dat"
@@ -333,10 +350,12 @@ exoticpeedtest () {
 	echo "" | tee -a $log
 	echostyle "## Exotic Speedtest"
 	echo "" | tee -a $log
-	speed "Sydney, Australia     :" "https://syd-au-ping.vultr.com/vultr.com.100MB.bin"
-	speed "Lagoon, New Caledonia :" "http://mirror.lagoon.nc/speedtestfiles/test50M.bin"
-	speed "Hosteasy, Moldova     :" "http://mirror.as43289.net/speedtest/100mb.bin"
-	speed "Prima, Argentina      :" "http://sftp.fibertel.com.ar/services/file-50MB.img"
+	speed "Vultr, Sydney, Australia    :" "https://syd-au-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Linode, Sydney, Australia   :" "http://speedtest.syd1.linode.com/100MB-syd1.bin"
+	speed "Sydney, Australia           :" "https://syd-au-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Lagoon, New Caledonia       :" "http://mirror.lagoon.nc/speedtestfiles/test50M.bin"
+	speed "Hosteasy, Moldova           :" "http://mirror.as43289.net/speedtest/100mb.bin"
+	speed "Prima, Argentina            :" "http://sftp.fibertel.com.ar/services/file-50MB.img"
 	echo "" | tee -a $log
 }
 
@@ -345,10 +364,13 @@ asiaspeedtest () {
 	echo "" | tee -a $log
 	echostyle "## Asia Speedtest"
 	echo "" | tee -a $log
-	speed "SoftLayer, Singapore :" "http://speedtest.sng01.softlayer.com/downloads/test100.zip"
-	speed "Linode, Tokyo, Japan :" "http://speedtest.tokyo2.linode.com/100MB-tokyo2.bin"
-	speed "Linode, Singapore    :" "http://speedtest.singapore.linode.com/100MB-singapore.bin"
-	speed "Vultr, Tokyo, Japan  :" "http://hnd-jp-ping.vultr.com/vultr.com.100MB.bin"
+	speed "SoftLayer, Singapore       :" "http://speedtest.sng01.softlayer.com/downloads/test100.zip"
+	speed "Linode, Tokyo, Japan       :" "http://speedtest.tokyo2.linode.com/100MB-tokyo2.bin"
+	speed "Linode, Singapore          :" "http://speedtest.singapore.linode.com/100MB-singapore.bin"
+	speed "Linode, mumbai1, India     :" "http://speedtest.mumbai1.linode.com/100MB-mumbai1.bin"
+	speed "Vultr, Tokyo, Japan        :" "https://hnd-jp-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Seoul               :" "https://sel-kor-ping.vultr.com/vultr.com.100MB.bin"
+	speed "Vultr, Singapore           :" "https://sgp-ping.vultr.com/vultr.com.100MB.bin"
 	echo "" | tee -a $log
 }
 
